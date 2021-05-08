@@ -1,0 +1,238 @@
+* {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-image: url('/assets/images/BG\ circles.png');
+    background-size: cover;
+    background-repeat: no-repeat, repeat;
+}
+
+img {
+    mix-blend-mode: darken;
+}
+
+nav ul {
+    font-size: small;
+    font-weight: 400;
+    text-transform: uppercase;
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+#home {
+    background-image: url('/assets/images/bgintro.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat, repeat;
+    background-blend-mode: darken;
+}
+
+#home .intro-padding {
+    padding: 250px;
+}
+
+#home h1 {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: uppercase;
+}
+
+#home button {
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 25px;
+    padding: 5px 30px;
+    color: #fff;
+    animation-name: example;
+    animation-duration: 1s;
+}
+
+
+/* @keyframes example {
+    0% {
+        margin-top: 50px;
+    }
+    100% {
+        margin-top: 0;
+    }
+} */
+
+#home button:hover {
+    color: #fdec6e;
+    text-shadow: 0px 0px 30px #fdec6e;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+
+/* ee82ee */
+
+.content button {
+    background-color: transparent;
+    border: 1px solid #ee82ee;
+    border-radius: 25px;
+    padding: 5px 30px;
+    color: #ee82ee;
+}
+
+.content button:hover {
+    box-shadow: 0px 0px 5px #ee82ee;
+    color: #ee82ee;
+    text-shadow: 0px 0px 20px #ee82ee;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+.heading-seperator {
+    height: 2px;
+    width: 100px;
+    background-color: violet;
+}
+
+.content {
+    padding: 10px;
+}
+
+.content h1 {
+    color: rgb(51, 51, 51);
+    font-weight: 300;
+    font-size: 28px;
+}
+
+.content p {
+    color: grey;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.content-row {
+    justify-content: space-between;
+    animation-name: cards;
+    animation-duration: 1s;
+}
+
+.content-row:nth-child(even) {
+    padding-top: 70px;
+    flex-direction: row-reverse;
+}
+
+.content ul {
+    list-style: none;
+}
+
+.content ul li::before {
+    content: "\2022";
+    color: violet;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.content-cards {
+    justify-content: center;
+}
+
+.card {
+    border-radius: 10px;
+    /* box-shadow: 0px 0px 5px #ee82ee; */
+}
+
+.card:hover {
+    margin-top: -6px;
+    box-shadow: 0px 3px 10px #b3b3b3;
+    transition: all .3s;
+}
+
+.card h1 {
+    color: rgb(51, 51, 51);
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.card p {
+    font-size: 16px;
+    color: grey;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+#about-us-dtag {
+    font-size: 16px;
+    color: grey;
+}
+
+#about-us-dtag-m {
+    display: none;
+}
+
+.carousel-item {
+    justify-content: center;
+}
+
+.carousel-inner img {
+    border-radius: 25px;
+    width: 20%;
+    align-items: center;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+#w3review {
+    padding: 15px;
+    color: rgb(77, 77, 77);
+    border: 0px;
+    background: rgba(168, 168, 168, 0.185);
+}
+
+footer {
+    background-image: url('/assets/images/BG\ circles.png');
+    background-size: cover;
+    background-repeat: no-repeat, repeat;
+}
+
+footer p {
+    color: rgb(138, 138, 138);
+    font-size: 12px;
+    /* letter-spacing: 1px; */
+}
+
+footer a {
+    color: rgb(138, 138, 138);
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+footer a:hover {
+    color: rgb(255, 255, 255);
+}
+
+@media only screen and (max-width: 600px) {
+    .content {
+        justify-content: center;
+        text-align: center;
+    }
+    .card {
+        justify-content: center;
+        text-align: center;
+    }
+    #about-us-dtag {
+        display: none;
+    }
+    #about-us-dtag-m {
+        display: block;
+        font-size: 16px;
+        color: grey;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+    #home .intro-padding {
+        display: none;
+    }
+}

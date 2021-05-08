@@ -22,7 +22,7 @@ nav ul {
 }
 
 #home {
-    background-image: url('./images/bgintro.jpeg');
+    background-image: url('../images/bgintro.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat, repeat;

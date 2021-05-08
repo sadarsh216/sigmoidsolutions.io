@@ -3,7 +3,7 @@
 }
 
 body {
-    background-image: url('/assets/images/BG\ circles.png');
+    background-image: url('../../assets/images/BG\ circles.png');
     background-size: cover;
     background-repeat: no-repeat, repeat;
 }

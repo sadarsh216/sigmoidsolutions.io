@@ -30,7 +30,8 @@ nav ul {
 }
 
 #home .intro-padding {
-    padding: 250px;
+     padding-top: 15rem;
+     padding-bottom: 15rem;
 }
 
 #home h1 {
@@ -233,6 +234,8 @@ footer a:hover {
         text-justify: inter-word;
     }
     #home .intro-padding {
-        display: none;
+        display: block;
+        padding-top: 15rem;
+        padding-bottom: 15rem;
     }
 }
